@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link th:href="@{/css/main.css}" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="header-container">
+        <!-- 로고 -->
+        <div class="log-container">
+            <img th:src="@{/image/logo.png}">
+            <p>DONGHAGEE</p>
+        </div>
+        <!-- 검색 -->
+        <div class="input-container">
+            <input type="text" placeholder="고봉김밥 먹고 운 썰 푼다.">
+
+        </div>
+        <!-- 로그인 및 회원가입 -->
+        <div class="btns-container">
+            <a href="/">로그인</a>
+            <a href="/">회원가입</a>
+
+        </div>
+    </div>
+    <!-- 배너 사진 -->
+    <div class="banner-container">
+        <img th:src="@{/image/banner.png}">
+    </div>
+
+    <div class="item-container">
+        <div class="left-section">
+
+        </div>
+
+        <div class="middle-section">
+            <div class="nav-list">
+                <button class="active">전체</button>
+                <button>패션</button>
+                <button>미용</button>
+                <button>IT</button>
+                <button>일상</button>
+            </div>
+
+            <hr style="margin-bottom: 25px;"/>
+            <div class="card-list">
+                <div class="card-container">
+                    <div class="card-left">
+                        <div class="profile-box">
+                            <img th:src="@{/image/banner.png}" class="profile-image">
+                            <div class="desc-box">
+                                <p class="name">김예지</p>
+                                <p class="ago-time">1시간전</p>
+                            </div>
+                        </div>
+                        <p class="title">고봉스 야미</p>
+                        <p class="content">아 배고프대</p>
+                        <div class="like-box">
+                            <i class="bi bi-heart-fill"></i>
+                            <p>공감 99</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <img th:src="@{/image/banner.png}" class="content-image">
+                    </div>
+                </div>
+
+                <hr style="margin-bottom: 20px;"/>
+
+                <div class="card-container">
+                    <div class="card-left">
+                        <div class="profile-box">
+                            <img th:src="@{/image/profile.png}" class="profile-image">
+                            <div class="desc-box">
+                                <p class="name">김예지</p>
+                                <p class="ago-time">1시간전</p>
+                            </div>
+                        </div>
+                        <p class="title">고봉스 야미</p>
+                        <p class="content">아 배고프대</p>
+                        <div class="like-box">
+                            <i class="bi bi-heart-fill"></i>
+                            <p>공감 99</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <img th:src="@{/image/banner.png}" class="content-image">
+                    </div>
+                </div>
+
+                <hr style="margin-bottom: 20px;"/>
+
+                <div class="card-container">
+                    <div class="card-left">
+                        <div class="profile-box">
+                            <img th:src="@{/image/banner.png}" class="profile-image">
+                            <div class="desc-box">
+                                <p class="name">김예지</p>
+                                <p class="ago-time">1시간전</p>
+                            </div>
+                        </div>
+                        <p class="title">고봉스 야미</p>
+                        <p class="content">아 배고프대</p>
+                        <div class="like-box">
+                            <i class="bi bi-heart-fill"></i>
+                            <p>공감 99</p>
+                        </div>
+                    </div>
+                    <div class="card-right">
+                        <img th:src="@{/image/banner.png}" class="content-image">
+                    </div>
+                </div>
+                <!--여기 내가 한 부분-->
+                <div class="view-all">
+                    <button>전체보기</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="right-section">
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
