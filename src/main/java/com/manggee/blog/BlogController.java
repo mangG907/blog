@@ -9,4 +9,7 @@ public class BlogController {
     public String index() {
         return "main";
     }
+
+    @GetMapping("/register")
+    public String join() {return "register";}
 }
