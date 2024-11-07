@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1440px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.log-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.log-container > img{
+    width: 50px;
+    height: 50px;
+    object-fit: fill;
+}
+
+.log-container >p{
+    font-size: 32px;
+    margin-left: 5px;
+    font-family: "Besley", serif;
+}
+
+.input-container{
+    width: 840px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.input-container > input{
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #4C4C4C;
+    border-radius: 99px;
+    background-color: #F6F6F6;
+    border :none;
+}
+
+.btns-container{
+    display: flex;
+    align-items: center;
+}
+
+.btns-container > a{
+    font-size: 14px;
+    color: #3C3C3C;
+    text-decoration: none;
+    margin-left: 24px;
+
+}
+
+.banner-container{
+    width: 1440px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.login-container{
+    width: 1440px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input-box{
+    position: relative;
+}
+.input-emo{
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.login-input{
+    width: 361px;
+    height: 46px;
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid #D2D2D2;
+    padding-left: 35px;
+
+
+}
+.login-container > p{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.login-container > button{
+    width: 400px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #3C3C3C;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.login-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+}
+.login-nav > p{color: #A8A8A8;}
+.login-nav > a{
+    text-decoration: none;
+    color: #A8A8A8;
+
+}

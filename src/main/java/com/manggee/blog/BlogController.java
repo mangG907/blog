@@ -9,4 +9,8 @@ public class BlogController {
     public String index() {
         return "main";
     }
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
 }
