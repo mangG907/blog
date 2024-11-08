@@ -88,6 +88,8 @@
     justify-content: center;
     border-radius: 10px;
     padding-left: 60px;
+    border:1px solid;
+    outline: none;
     /*background-color: #C4C4C4;*/
 }
 
@@ -98,6 +100,7 @@
     width: 630px;
     height: 60px;
     font-size: 14px;
+    color: #3C3C3C;
     flex-direction: row-reverse;
     justify-content: center;
     border-radius: 10px;
