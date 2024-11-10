@@ -13,4 +13,8 @@ public class BlogController {
     public String login() {
         return "login";
     }
+    @GetMapping("/post")
+    public String post() {
+        return "post";
+    }
 }
