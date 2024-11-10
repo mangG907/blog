@@ -3,28 +3,24 @@
     padding: 0;
 }
 
-html, body {
-    width: 100%;
-    height: 100vh;
-}
-
-body {
-    font-family: 'Besley', serif;
-    background-color: #f4f4f9;
-    color: #333;
+body, html{
+    height: 100%;
 }
 
 .container {
+    width: 1440px;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .header-container {
     width: 1440px;
-    margin: 0 auto;
+    height: fit-content;
+    background-color: white;
     display: flex;
     flex-direction: row;
-    padding-top: 35px;
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -44,144 +40,72 @@ body {
 .log-container > p {
     font-size: 32px;
     margin-left: 5px;
+    font-family: 'Besley', serif;
+    color: #333;
 }
 
-.input-container {
-    width: 840px;
-    height: 50px;
-    margin: 0 30px;
+.post-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
 }
 
-.input-container > input {
+.side-box{
+    width: 335px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+.post-box {
+    display: flex;
     width: 100%;
     height: 100%;
-    padding-left: 30px;
-    font-size: 14px;
-    color: #4C4C4C;
-    border-radius: 99px;
-    background-color: #F6F6F6;
-    border: none;
+    min-height: 100%;
+    max-height: 100%;
 }
 
-.btns-container a {
-    margin-left: 10px;
-    color: #4a4a8a;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.banner-container img {
+.post-box > textarea {
+    flex-grow: 1;
     width: 100%;
-    border-radius: 8px;
-}
-
-.login-container p {
-    font-size: 20px;
-    color: #4a4a8a;
-    margin-bottom: 10px;
-}
-
-.login-input-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.login-input-box i {
-    margin-right: 10px;
-    color: #4a4a8a;
-}
-
-.login-input {
-    width: 100%;
-    padding: 8px;
-    border: none;
+    font-size: 16px;
+    padding: 2%;
+    border: 1px solid #ddd;
+    background-color: #f4f4f9;
+    border-radius: 4px;
+    resize: vertical;
     outline: none;
 }
 
-.login-container button {
+.side-box > .post-actions {
+    margin-left: 10px;
     width: 100%;
-    padding: 10px;
-    background-color: #4a4a8a;
-    color: white;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+
+.post-button {
+    width: 100px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
     border: none;
-    font-size: 16px;
-    border-radius: 4px;
     cursor: pointer;
-}
-
-.login-container button:hover {
-    background-color: #3d3d70;
-}
-
-.login-nav {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.login-nav a {
-    color: #4a4a8a;
     text-decoration: none;
-    margin: 0 5px;
 }
 
-.post-container h1 {
-    font-size: 24px;
-    color: #4a4a8a;
-    text-align: center;
+.submit {
+    background-color: #4a90e2;
 }
 
-.post-container label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #4a4a8a;
-}
-
-.post-container input[type="text"],
-.post-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.post-container textarea {
-    height: 200px;
-    resize: vertical;
-}
-
-.post-container button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4a4a8a;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.post-container button:hover {
-    background-color: #3d3d70;
-}
-
-.post-submit-button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #4a4a8a;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.post-submit-button:hover {
-    background-color: #3d3d70;
+.cancel {
+    background-color: #d9534f;
 }
