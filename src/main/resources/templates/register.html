@@ -31,8 +31,8 @@
 
     <!-- 회원가입 창 -->
     <div class="register-container">
-        <div class="register-form">
-            <form method="post" th:action="@{/register}">
+        <form method="post" action="/register">
+            <div class="register-form">
                 <label class="register-input-box">
                     <i class="bi bi-person-fill input-emo"></i>
                     <input class="register-input" placeholder="아이디" type="text">
@@ -45,36 +45,36 @@
                     <i class="bi bi-lock-fill input-emo"></i>
                     <input class="register-input" placeholder="비밀번호 확인" type="password">
                 </label>
-            </form>
-        </div>
+            </div>
 
-        <div class="detail-form">
-            <label class="register-input-box">
-                <i class="bi bi-person-fill input-emo"></i>
-                <input class="register-input" placeholder="이름" type="text">
-            </label>
-            <label class="register-input-box">
-                <i class="bi bi-calendar-event-fill input-emo"></i>
-                <input class="register-input" maxlength="8" placeholder="생년월일 8자리" type="text">
-            </label>
-            <label class="shop-input-box">
-                <i class="bi bi-globe2 input-emo"></i>
-                <select class="shop-input">
-                    <option disabled selected>통신사 선택</option>
-                    <option>SKT</option>
-                    <option>KT</option>
-                    <option>LG U+</option>
-                </select>
-            </label>
-            <label class="register-input-box">
-                <i class="bi bi-telephone-fill input-emo"></i>
-                <input class="register-input" placeholder="전화번호" type="text">
-            </label>
-        </div>
+            <div class="detail-form">
+                <label class="register-input-box">
+                    <i class="bi bi-person-fill input-emo"></i>
+                    <input class="register-input" placeholder="이름" type="text">
+                </label>
+                <label class="register-input-box">
+                    <i class="bi bi-calendar-event-fill input-emo"></i>
+                    <input class="register-input" maxlength="8" placeholder="생년월일 8자리" type="text">
+                </label>
+                <label class="shop-input-box">
+                    <i class="bi bi-globe2 input-emo"></i>
+                    <select class="shop-input">
+                        <option disabled selected>통신사 선택</option>
+                        <option>SKT</option>
+                        <option>KT</option>
+                        <option>LG U+</option>
+                    </select>
+                </label>
+                <label class="register-input-box">
+                    <i class="bi bi-telephone-fill input-emo"></i>
+                    <input class="register-input" placeholder="전화번호" type="text">
+                </label>
+            </div>
 
-        <div class="submit-container">
-            <button type="button">회원가입</button>
-        </div>
+            <div class="submit-container">
+                <button type="button">회원가입</button>
+            </div>
+        </form>
 
         <div class="right-section">
 
