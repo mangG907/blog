@@ -29,36 +29,41 @@
         </div>
     </div>
 
+<!--    &lt;!&ndash; 오류 메시지 표시 &ndash;&gt;-->
+<!--    <div class="error-message">-->
+<!--        <p th:text="${errorMessage}" style="color: red;"></p>-->
+<!--    </div>-->
+
     <!-- 회원가입 창 -->
     <div class="register-container">
-        <form method="post" action="/register">
+        <form method="post" action="/user/register">
             <div class="register-form">
                 <label class="register-input-box">
                     <i class="bi bi-person-fill input-emo"></i>
-                    <input class="register-input" placeholder="아이디" type="text">
+                    <input class="register-input" placeholder="아이디" type="text" name="email" required>
                 </label>
                 <label class="register-input-box">
                     <i class="bi bi-lock-fill input-emo"></i>
-                    <input class="register-input" placeholder="비밀번호" type="password">
+                    <input class="register-input" placeholder="비밀번호" type="password" name="password" required>
                 </label>
                 <label class="register-input-box">
                     <i class="bi bi-lock-fill input-emo"></i>
-                    <input class="register-input" placeholder="비밀번호 확인" type="password">
+                    <input class="register-input" placeholder="비밀번호 확인" type="password" name="confirmPassword" required>
                 </label>
             </div>
 
             <div class="detail-form">
                 <label class="register-input-box">
                     <i class="bi bi-person-fill input-emo"></i>
-                    <input class="register-input" placeholder="이름" type="text">
+                    <input class="register-input" placeholder="이름" type="text" name="name" required>
                 </label>
                 <label class="register-input-box">
                     <i class="bi bi-calendar-event-fill input-emo"></i>
-                    <input class="register-input" maxlength="8" placeholder="생년월일 8자리" type="text">
+                    <input class="register-input" maxlength="8" placeholder="생년월일 8자리" type="text" name="birthdate" required>
                 </label>
                 <label class="shop-input-box">
                     <i class="bi bi-globe2 input-emo"></i>
-                    <select class="shop-input">
+                    <select class="shop-input" name="shop" required>
                         <option disabled selected>통신사 선택</option>
                         <option>SKT</option>
                         <option>KT</option>
@@ -67,12 +72,12 @@
                 </label>
                 <label class="register-input-box">
                     <i class="bi bi-telephone-fill input-emo"></i>
-                    <input class="register-input" placeholder="전화번호" type="text">
+                    <input class="register-input" placeholder="전화번호" type="text" name="phone" required>
                 </label>
             </div>
 
             <div class="submit-container">
-                <button type="button">회원가입</button>
+                <button type="submit">회원가입</button>
             </div>
         </form>
 

@@ -1,6 +1,6 @@
-package com.manggee.blog.dto;
+package com.manggee.blog.user.dto;
 
-import com.manggee.blog.entity.User;
+import com.manggee.blog.user.entity.UserEntity;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -26,7 +26,7 @@ public class UserResponseDto {
             this.createdAt = LocalDateTime.now();
         }
 
-        public SaveUser(User newUser) {
+        public SaveUser(UserEntity newUser) {
         }
     }
 }

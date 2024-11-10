@@ -1,13 +1,13 @@
-package com.manggee.blog.entity;
+package com.manggee.blog.user.entity;
 
-import com.manggee.blog.dto.UserRequestDto;
+import com.manggee.blog.user.dto.UserRequestDto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class User {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +19,7 @@ public class User {
     private String shop;
     private String phone;
 
-    public User(String email, String password, String name, String birthDate, String shop, String phone) {
+    public UserEntity(String email, String password, String name, String birthDate, String shop, String phone) {
         this.email = email;
         this.password = password;
         this.name = name;
@@ -28,7 +28,7 @@ public class User {
         this.phone = phone;
     }
 
-    public User() {}
+    public UserEntity() {}
 
     public void updateUser(UserRequestDto userRequestDto) {
         this.name = userRequestDto.getName();

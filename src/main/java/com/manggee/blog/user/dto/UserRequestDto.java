@@ -1,4 +1,4 @@
-package com.manggee.blog.dto;
+package com.manggee.blog.user.dto;
 
 import lombok.Data;
 
