@@ -32,18 +32,20 @@
     <!-- 회원가입 창 -->
     <div class="register-container">
         <div class="register-form">
-            <label class="register-input-box">
-                <i class="bi bi-person-fill input-emo"></i>
-                <input class="register-input" placeholder="아이디" type="text">
-            </label>
-            <label class="register-input-box">
-                <i class="bi bi-lock-fill input-emo"></i>
-                <input class="register-input" placeholder="비밀번호" type="password">
-            </label>
-            <label class="register-input-box">
-                <i class="bi bi-lock-fill input-emo"></i>
-                <input class="register-input" placeholder="비밀번호 확인" type="password">
-            </label>
+            <form method="post" th:action="@{/register}">
+                <label class="register-input-box">
+                    <i class="bi bi-person-fill input-emo"></i>
+                    <input class="register-input" placeholder="아이디" type="text">
+                </label>
+                <label class="register-input-box">
+                    <i class="bi bi-lock-fill input-emo"></i>
+                    <input class="register-input" placeholder="비밀번호" type="password">
+                </label>
+                <label class="register-input-box">
+                    <i class="bi bi-lock-fill input-emo"></i>
+                    <input class="register-input" placeholder="비밀번호 확인" type="password">
+                </label>
+            </form>
         </div>
 
         <div class="detail-form">
